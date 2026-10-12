@@ -8,8 +8,8 @@ class Pelanggan extends Model
 {
     protected $table    = 'pelanggan';
     protected $primarykey = 'pelanggan_id';
-    protected $fillabel = [
-        'firts_name',
+    protected $fillable = [
+        'first_name',
         'last_name',
         'birtday',
         'gender',
