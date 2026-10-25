@@ -84,6 +84,23 @@
                     <span class="sidebar-text">pelanggan</span>
                 </a>
             </li>
+            
+<li class="nav-item {{ request()->routeIs('admin.user.*') ? 'active' : '' }}">
+    <a href="{{ route('admin.user.index') }}" class="nav-link">
+        <span class="sidebar-icon">
+            <svg class="icon icon-xs me-2" fill="none"
+                 stroke="currentColor" stroke-width="1.5"
+                 viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2m12-13a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm2 5a4 4 0 0 1 4 4v2h-3"/>
+            </svg>
+        </span>
+        <span class="sidebar-text">User</span>
+    </a>
+</li>
+
 
             <li role="separator" class="dropdown-divider mt-4 mb-3 border-gray-700"></li>
             <li class="nav-item">
